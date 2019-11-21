@@ -100,8 +100,14 @@
 //   console.log('file renamed');
 // });
 
-let http = require('http');
-http.createServer(function (req, res){
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write('<p>My first event</p>')
-}).listen(8080)
+// let http = require('http');
+// http.createServer(function (req, res){
+//   res.writeHead(200, {'Content-Type': 'text/html'});
+//   res.write('<p>My first event</p>')
+// }).listen(8080)
+
+function validationEmail(x) {
+  let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  console.log(reg.test(x));
+}
+validationEmail("me.me.se");
