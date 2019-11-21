@@ -79,12 +79,18 @@
 //   res.end('This is my first server with node.js');
 // }).listen(8080);
 
-let http = require('http');
+// let http = require('http');
+// let fs = require('fs');
+// http.createServer( function (req, res) {
+//   fs.readFile('index1.html', function (err, data){
+//     res.writeHead(200, {'Content-Type': 'text/html'});
+//     res.write(data);
+//     res.end();
+//   });
+// }).listen(8080)
+
 let fs = require('fs');
-http.createServer( function (req, res) {
-  fs.readFile('index1.html', function (err, data){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-  });
-}).listen(8080)
+fs.unlink('index1.html', function (err){
+  if(err) throw err;
+  console.log('file deleted!');
+});
