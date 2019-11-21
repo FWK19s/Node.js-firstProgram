@@ -94,8 +94,14 @@
 //   if(err) throw err;
 //   console.log('file deleted!');
 // });
-let fs = require('fs');
-fs.rename('index2.html', 'index3.html', function (err){
-  if (err) throw err;
-  console.log('file renamed');
-});
+// let fs = require('fs');
+// fs.rename('index2.html', 'index3.html', function (err){
+//   if (err) throw err;
+//   console.log('file renamed');
+// });
+
+let http = require('http');
+http.createServer(function (req, res){
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write('<p>My first event</p>')
+}).listen(8080)
