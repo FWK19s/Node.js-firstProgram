@@ -106,8 +106,15 @@
 //   res.write('<p>My first event</p>')
 // }).listen(8080)
 
-function validationEmail(x) {
-  let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+// function validationEmail(x) {
+//   let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//   console.log(reg.test(x));
+// }
+// validationEmail("me.me.se");
+
+
+function validatePhoneNumber(x) {
+  let reg = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
   console.log(reg.test(x));
 }
-validationEmail("me.me.se");
+validatePhoneNumber("64586");
