@@ -89,8 +89,13 @@
 //   });
 // }).listen(8080)
 
+// let fs = require('fs');
+// fs.unlink('index1.html', function (err){
+//   if(err) throw err;
+//   console.log('file deleted!');
+// });
 let fs = require('fs');
-fs.unlink('index1.html', function (err){
-  if(err) throw err;
-  console.log('file deleted!');
+fs.rename('index2.html', 'index3.html', function (err){
+  if (err) throw err;
+  console.log('file renamed');
 });
