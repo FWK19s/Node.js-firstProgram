@@ -106,6 +106,9 @@
 //   res.write('<p>My first event</p>')
 // }).listen(8080)
 
+
+//This an exmple of working with branches
+
 // function validationEmail(x) {
 //   let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 //   console.log(reg.test(x));
