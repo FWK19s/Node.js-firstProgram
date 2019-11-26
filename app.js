@@ -114,6 +114,7 @@
 //   let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 //   console.log(reg.test(x));
 // }
+//hello
 // validationEmail("me.me.se");
 
 
