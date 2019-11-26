@@ -108,6 +108,7 @@
 
 
 //This an exmple of working with branches
+//this is an exmple of a commit
 
 // function validationEmail(x) {
 //   let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
